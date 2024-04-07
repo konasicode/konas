@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contacts</title>
+   <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+</head>
+<body>
+   <section">
+      <div class="mx-auto max-w-7xl px-8">
+         <div class="flex justify-between">
+            <div class="flex flex-col max-w-[572px] pb-16 leading-7">
+                  <span class="font-semibold">Our office</span>
+                  <span class="text-slate-500 mt-6">Prefer doing things in person? We don’t but we have to list our addresses here for legal reasons.</span>
+                  <div class="py-16 flex flex-col">
+                     <span class="text-base font-semibold">La Vila Joyosa</span>
+                     <span class="text-sm text-slate-500">partida Paraiso, 55</span>
+                     <span class="text-sm text-slate-500">03570, Alicante, Spain</span>
+                  </div>
+                  <div class="py-16 flex flex-col group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
+                     <span class="font-semibold">Email us</span>
+                     <a class="text-sm leading-7 text-slate-500" href="mailto:konasicode@gmail.com" target="_blank">konasicode@gmail.com</a>
+                  </div>
+               <div class="pt-16 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:left-0 before:top-0 before:h-px before:w-6 after:left-8 after:right-0 after:top-0 after:h-px">
+                  <span class="font-semibold">Follow us</span>
+                  <div class="flex gap-x-5 pt-6">
+                     <a href="https://github.com/konasicode/konas" target="_blank" ><img src="./images/github.png" alt="github"></a>
+                     <a href="https://www.instagram.com/konas_studio?igsh=MXBsY3J4ZmNnMWdmeQ%3D%3D&utm_source=qr" target="_blank" ><img src="./images/instagram.png" alt="instagram"></a>
+                  </div>
+               </div>
+            </div>
+            <form class="w-full max-w-[592px]">
+               <h2 class="font-semibold">Work inquiries</h2>
+               <div class="rounded-2xl w-full text-slate-500 mt-6">
+                  <div class="relative z-0 focus-within:z-10">
+                     <input class="transition peer w-full focus:outline-none focus:text-neutral-950 px-6 pt-12 pb-4 border rounded-t-2xl border-neutral-300 focus:border-neutral-950 ring-4 ring-transparent focus:ring-neutral-950/5" type="text" id="name" name="name" required minlength="3" maxlength="100" placeholder=" ">
+                     <label class="transition-all duration-200 absolute left-6 top-8 origin-left peer-focus:top-4 peer-focus:text-neutral-950 peer-focus:scale-75 peer-[:not(:placeholder-shown)]:text-neutral-950 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:top-4" for="name">Name</label>
+                  </div>
+                  <div class="relative z-0 focus-within:z-10">
+                     <input class="transition peer w-full focus:outline-none px-6 pt-12 pb-4 border  border-neutral-300 focus:border-neutral-950 focus:text-neutral-950 ring-4 ring-transparent focus:ring-neutral-950/5" type="email" id="email" name="email" required  placeholder=" ">
+                     <label class="transition-all absolute left-6 top-8 origin-left peer-focus:top-4 peer-focus:text-neutral-950 peer-focus:scale-75 peer-[:not(:placeholder-shown)]:text-neutral-950 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:top-4" for="email">Email</label>
+                  </div>
+                  <div class="relative z-0 focus-within:z-10">
+                     <input class="transition peer w-full focus:outline-none px-6 pt-12 pb-4 border border-neutral-300 focus:border-neutral-950 focus:text-neutral-950 ring-4 ring-transparent focus:ring-neutral-950/5" type="text" id="company" name="company"  placeholder=" ">
+                     <label class="transition-all absolute left-6 top-8 origin-left peer-focus:top-4 peer-focus:text-neutral-950 peer-focus:scale-75 peer-[:not(:placeholder-shown)]:text-neutral-950 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:top-4" for="company">Company</label>
+                  </div>
+                  <div class="relative z-0 focus-within:z-10">
+                     <input class="transition peer w-full focus:outline-none px-6 pt-12 pb-4 border border-neutral-300 focus:border-neutral-950 focus:text-neutral-950 ring-4 ring-transparent focus:ring-neutral-950/5" type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  placeholder=" ">
+                     <label class="transition-all absolute left-6 top-8 origin-left peer-focus:top-4 peer-focus:text-neutral-950 peer-focus:scale-75 peer-[:not(:placeholder-shown)]:text-neutral-950 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:top-4" for="phone">Phone</label>
+                  </div>
+                  <div class="relative z-0 focus-within:z-10">
+                     <input class="transition peer w-full focus:outline-none px-6 pt-12 pb-4 border border-neutral-300 focus:border-neutral-950 focus:text-neutral-950 ring-4 ring-transparent focus:ring-neutral-950/5" type="text" id="message" name="message" maxlength="1000"  placeholder=" ">
+                     <label class="transition-all absolute left-6 top-8 origin-left peer-focus:top-4 peer-focus:text-neutral-950 peer-focus:scale-75 peer-[:not(:placeholder-shown)]:text-neutral-950 peer-[:not(:placeholder-shown)]:scale-75 peer-[:not(:placeholder-shown)]:top-4" for="message">Message</label>
+                  </div>
+                  <div class="px-6 pt-8 pb-7 border rounded-b-2xl border-neutral-300">
+                     <fieldset>
+                        <legend>Budget</legend>
+                        <div class="grid grid-cols-2 gap-8 mt-5 text-neutral-950">
+                           <label class="flex gap-x-3" for="aprice1">
+                              <input class="w-6 h-6 appearance-none outline-none border border-neutral-300 rounded-full checked:border-neutral-950 checked:border-[0.4rem]" type="radio" id="price1" name="budget" value="1">
+                              <span>$1K – $5K</span>
+                           </label>
+                           <label class="flex gap-x-3" for="price2">
+                              <input class="w-6 h-6 appearance-none outline-none border border-neutral-300 rounded-full checked:border-neutral-950 checked:border-[0.4rem]" type="radio" id="price2" name="budget" value="5">
+                              <span>$5K – $10K</span>
+                           </label> 
+                           <label class="flex gap-x-3" for="aprice3">
+                              <input class="w-6 h-6 appearance-none outline-none border border-neutral-300 rounded-full checked:border-neutral-950 checked:border-[0.4rem]" type="radio" id="price3" name="budget" value="10">
+                              <span>$10K – $20K</span>
+                           </label>
+                           <label class="flex gap-x-3" for="aprice4">
+                              <input class="w-6 h-6 appearance-none outline-none border border-neutral-300 rounded-full checked:border-neutral-950 checked:border-[0.4rem]" type="radio" id="price4" name="budget" value="20">
+                              <span>More than $20K</span>
+                           </label>
+                        </div>
+                     </fieldset>
+                  </div>
+               </div>
+               <button class="max-w-56 text-sm font-semibold transition bg-neutral-950 hover:brightness-200 mt-9 cursor-pointer text-slate-50 rounded-full
+               px-4 py-2" type="submit">Let’s work together</button>
+            </form>
+         </div>
+      </div>
+   </section>
+</body>
+</html>
